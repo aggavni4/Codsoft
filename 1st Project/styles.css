@@ -1,0 +1,66 @@
+body{
+    background-image:linear-gradient(rgb(6, 11, 54,0.8), rgb(6, 11, 54,0.8)),url("images/desktop_bg.jpg");
+    background-size: cover;
+    height: 100%;
+    font-family: 'Gothic A1', sans-serif;
+    /* overflow: hidden; */
+    /* background-color:rgb(49, 62, 88,0.2); */
+    color: white;
+}
+.navbar{
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-family: 'Comfortaa', cursive;
+    /* color: white; */
+}
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight:bolder;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-item{
+    /* padding: 1rem; */
+    font-family: 'Equinox';
+    padding-left: 2rem;
+}
+.login{
+    padding-right: 8rem;
+    color: white;
+  /* background-color: transparent; */
+  text-decoration: none;
+}
+.login:hover{
+    color: rgb(113, 141, 242);
+  background-color: transparent;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+.title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 8%;
+    /* padding: 5rem; */
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    line-height: 6rem;
+    /* line-height: 2rem; */
+}
+.sub-heading{
+    font-size: 1.8rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    margin-top: 2rem;
+    font-size: 2rem;
+
+}
+.btn:hover{
+    transform: scale(1.05);
+}
