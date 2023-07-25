@@ -9,10 +9,16 @@ body{
 }
 .navbar{
     font-size: 1.4rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-left: 2rem;
     font-family: 'Comfortaa', cursive;
     /* color: white; */
+}
+
+.changing-back{
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.5s ease-in-out;
 }
 .navbar-brand{
     font-size: 2.5rem;
@@ -35,6 +41,7 @@ body{
   background-color: transparent;
   text-decoration: underline;
   transform: scale(1.05);
+  transition: transform 0.15s ease-in;
 }
 .title{
     text-align: center;
@@ -63,6 +70,7 @@ h1{
 }
 .btn:hover{
     transform: scale(1.05);
+    transition: transform 0.15s ease-in;
 }
 h2{
     font-size:4rem;
@@ -82,7 +90,7 @@ h3{
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 20px 300px;
+    margin: 0 auto;
 }
 .flex-item{
     flex: 1;
@@ -101,11 +109,12 @@ p{
     height: 950px;
     background-color: rgba(13, 15, 32, 0.82) ;
     padding-bottom: 800px;
+    width: 100%;
 }
 .replace h3{
     font-family: 'Great Vibes Regular';
     font-size: 7rem;
-    text-align: center;
+    margin-left: 18%;
     padding: 200px 0;
     margin-bottom: 60px;
 }
@@ -129,7 +138,8 @@ img{
     width: 2rem;
 }
 .flex-item1:hover{
-    transform: scale(0.53);
+    transform: scale(0.6);
+    transition: transform 0.5s ease-in-out;
 }
 .googleDrive:hover{
     transform: scale(0.45);
@@ -141,6 +151,7 @@ img{
     height: 500px;
     padding-top: 3%;
     padding-bottom: 3%;
+    width: 100%;
 }
 .last-sync h2{
     font-family: 'Times New Roman', Times, serif;
@@ -166,9 +177,11 @@ img{
 
 .flex-container2{
     display: flex;
-    justify-content: space-around;
+    width: 50%;
+    justify-content: space-between;
     align-items: center;
-    padding-right: 100px;
+    gap: 15%;
+    margin: 0 auto;
 }
 .flex-container2 h2{
     font-size: 4rem;
@@ -176,7 +189,10 @@ img{
     font-family: 'Open Sans', sans-serif;
 }
 table{
-    transform: scale(2);
+    /* transform: scale(2); */
+    width: 100%;
+    height: 100%;
+    font-size: 170%;
 }
 table,th,td{
     padding-right: 30px;
