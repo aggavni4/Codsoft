@@ -6,6 +6,16 @@ body{
     /* overflow: hidden; */
     /* background-color:rgb(49, 62, 88,0.2); */
     color: white;
+    animation: fade-in 2s ease-in;
+}
+@keyframes fade-in{
+    from {
+        opacity:0;
+    }
+
+    to {
+        opacity:1;
+    }
 }
 .navbar{
     font-size: 1.4rem;
