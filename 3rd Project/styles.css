@@ -1,0 +1,56 @@
+h1{
+    color: rgb(201, 88, 3);
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+.flex-container{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 400px;
+    margin: auto;
+    padding: 20px 2px;
+}
+.zero{
+    width: 160px;
+    border-radius: 40px 40px 40px 40px;
+}
+button{
+    font-size: 1.2rem;
+    margin: 1px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.505);
+    color: white;
+}
+.grid-container{
+    display: grid;
+}
+.right{
+    background-color: rgba(255, 166, 0, 0.881);
+}
+.light-grey{
+    background-color: rgba(152, 151, 151, 0.824);
+}
+.input-box{
+    width: 75%;
+    border: none;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    /* margin-bottom: 10px; */
+    text-align: right;
+    background-color: black;
+    color: white;
+}
+
+
