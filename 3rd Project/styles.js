@@ -9,9 +9,20 @@ Array.from(buttons).forEach((button)=>{
         }
         else if(e.target.innerHTML=='=')
         {
-            string=eval(string);
+            var x=0;
+            try{
+                string=eval(string);
+            }catch{
+                x=1;
+                // string="Error";
+                $(":input").val('Error');
+                string="";
+            }
             // document.querySelector("input").value=string;
-            $(":input").val(string);
+            if(x!=1)
+            {$(":input").val(string);
+            string="";}
+
         }
         else
         {
