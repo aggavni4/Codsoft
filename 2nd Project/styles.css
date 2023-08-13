@@ -1,0 +1,17 @@
+body{
+    background-color: rgba(53,53,70,255);
+    margin: 0;
+}
+div{
+    width: 100%;
+}
+.first, .third,.fifth{
+    height: 500px;
+}
+.second, .fourth{
+    background-color: rgba(37,39,53,255);
+    height: 500px;
+    margin: 0 0;
+    width: 100%;
+    padding: 0;
+}
