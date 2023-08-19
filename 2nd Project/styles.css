@@ -1,17 +1,254 @@
 body{
     background-color: rgba(53,53,70,255);
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color:#BCBABC;
 }
-div{
+
+  .container {
+    display: inline-block;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 3s steps(18, end) forwards, blink .4s infinite;
+  }
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: orange; }
+  }
+
+
+.first, .third,.fifth,.second, .fourth{
+    padding: 0 13%;
+}
+li{
+    float:right;
+    list-style-type: none;
+    padding: 30px;
+    padding-top: 50px;
+    font-size: 1.4rem;
+}
+.first{
+    background-image: url("images/bday_pic_original_full-removebg-preview_Cropped.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20rem ;
+}
+li a{
+    text-decoration: none;
+    color:#BCBABC;
+}
+a:hover{
+    color: #fed50b;
+}
+.container1{
+    display: flex;
+    padding: 50px 0 0;
+    gap: 300px;
+    justify-content: space-between;
+    width: 100%;
+    /* margin-right:0; */
+}
+.container1 p{
+    padding: 20px 0 0;
+}
+h5{
+    font-family: 'Cutive Mono', monospace;
+}
+h1{
+    font-size:3rem;
+    float: right;
+    color: white;
+}
+.flex-item1{
+    width: 85%;
+}
+.flex-item1 i{
+    padding: 20px;
+    padding-left: 5px;
+}
+.icons{
+    padding: 50px;
+    padding-left: 20px;
+}
+h2{
+    color: white;
+    font-weight: 500;
+}
+
+.container2{
+    display: flex;
+    gap:200px;
+    padding: 100px 0;
+    justify-content: space-between;
     width: 100%;
 }
+.flex-item2{
+    width: 85%;
+}
+p{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.container3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -100px;
+}
+
+
+
+
+/* FLIP-CARD */
+/* START */
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #EFA649;
+    color: black;
+  }
+  div.coder{
+    background-image: url("images/coder.jpg");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  div.webd{
+    background-image: url("images/webd.jpg");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  div.ds{
+    background-image: url("images/ds.png");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  /* Style the back side */
+  .flip-card-back h2{
+    font-family: Pristina Regular;
+    font-size: 2.2rem;
+    color:#EFA649 ;
+  }
+  .flip-card-back {
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 10px;
+  }
+
+/* END */
+
+
+.link-to-projects {
+    font-size: 3rem;
+    padding: 150px 0 50px 50px;
+}
+.link-to-projects a{
+    color: white;
+    text-decoration: none;
+}
+.link-to-projects a:hover{
+    color:#EFA649 ;
+}
+
+.container4{
+    padding-top: 100px ;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 30%;
+}
+
 .first, .third,.fifth{
-    height: 500px;
+    height: 550px;
+    /* width: 100%; */
 }
 .second, .fourth{
     background-color: rgba(37,39,53,255);
     height: 500px;
     margin: 0 0;
-    width: 100%;
-    padding: 0;
+    /* width: 100%; */
+    /* padding: 0; */
+}
+.second{
+    height: 550px;
+}
+.fourth{
+    padding-bottom: 100px;
+}
+form{
+    margin-top: 30px;
+}
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color:#fed50b;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.578);
+    font-size: 1.5rem;
+    caret-color: white;
+    width: 300px;
+}
+
+.fifth{
+    height: 250px;
+}
+.footer{
+    text-align: center;
+    padding: 100px;
+    font-family: Pristina Regular;
+    font-size: 2rem;
+}
+.button{
+    background-color: transparent;
+    border: none;
+}
+.button i{
+    font-size: 1.2rem;
 }
